@@ -30,7 +30,7 @@ class ParentAdapter(private val parents : List<ParentModel>) : RecyclerView.Adap
         holder.recyclerView.apply {
             layoutManager = LinearLayoutManager(holder.recyclerView.context, LinearLayout.HORIZONTAL, false)
             adapter = ChildAdapter(parent.children)
-            recycledViewPool = viewPool
+            //recycledViewPool = viewPool
         }
     }
 
