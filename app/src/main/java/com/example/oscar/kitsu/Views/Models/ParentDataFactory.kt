@@ -1,15 +1,15 @@
 package com.example.oscar.kitsu.Views.Models
 
-import java.util.*
+
 
 object ParentDataFactory{
-    private val random = Random()
 
-    private val titles =  arrayListOf( "Anime Series")
+
+    private val title =  "Anime Series"
 
     private fun randomTitle() : String{
-        val index = random.nextInt(titles.size)
-        return titles[index]
+
+        return title
     }
 
     private fun randomChildren() : List<ChildModel>{
