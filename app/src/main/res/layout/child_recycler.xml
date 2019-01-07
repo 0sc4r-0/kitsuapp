@@ -33,7 +33,7 @@
             android:id="@+id/child_imageView"
             android:layout_width="126dp"
             android:layout_height="189dp"
-            android:layout_marginBottom="38dp"
+            android:layout_marginBottom="45dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="42dp"
@@ -42,5 +42,6 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" android:clickable="true"/>
+            app:layout_constraintVertical_bias="1.0" android:clickable="true"
+            android:onClick="onClickDetail"/>
 </android.support.constraint.ConstraintLayout>
