@@ -19,7 +19,8 @@
         <activity
                 android:name=".Views.Views.DetailView"
                 android:label="@string/title_activity_detail_view"
-                android:theme="@style/AppTheme.NoActionBar">
+                android:theme="@style/AppTheme"
+                android:parentActivityName=".MainActivity">
         </activity>
     </application>
 
