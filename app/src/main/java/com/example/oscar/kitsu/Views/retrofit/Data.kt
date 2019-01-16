@@ -2,6 +2,12 @@ package com.example.oscar.kitsu.Views.retrofit
 import com.google.gson.annotations.SerializedName
 
 
+
+data class AnimeData(
+    @SerializedName("data")
+    var `data`: List<Data?>?
+)
+
 data class Data(
     @SerializedName("attributes")
     var attributes: Attributes?,
@@ -20,26 +26,18 @@ data class Attributes(
     var averageRating: String?,
     @SerializedName("canonicalTitle")
     var canonicalTitle: String?,
-    @SerializedName("coverImageTopOffset")
-    var coverImageTopOffset: Int?,
-    @SerializedName("createdAt")
-    var createdAt: String?,
     @SerializedName("episodeCount")
     var episodeCount: Int?,
-    @SerializedName("nsfw")
-    var nsfw: Boolean?,
+    @SerializedName("episodeLength")
+    var episodeLength: Int?,
     @SerializedName("posterImage")
     var posterImage: PosterImage?,
-    @SerializedName("showType")
-    var showType: String?,
-    @SerializedName("slug")
-    var slug: String?,
+    @SerializedName("status")
+    var status: String?,
     @SerializedName("subtype")
     var subtype: String?,
     @SerializedName("synopsis")
     var synopsis: String?,
-    @SerializedName("updatedAt")
-    var updatedAt: String?,
     @SerializedName("youtubeVideoId")
     var youtubeVideoId: String?
 )
@@ -56,4 +54,3 @@ data class PosterImage(
     @SerializedName("tiny")
     var tiny: String?
 )
-

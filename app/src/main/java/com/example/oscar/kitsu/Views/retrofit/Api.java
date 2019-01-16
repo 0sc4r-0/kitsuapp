@@ -4,6 +4,6 @@ import retrofit2.http.GET;
 public interface Api {
 
         @GET("anime/")
-        Call<Data> getData();
+        Call<AnimeData> getData();
 
 }
