@@ -25,7 +25,8 @@
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.0" app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="TODO"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,27 +44,27 @@
     <android.support.constraint.Guideline
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:layout_constraintGuide_begin="319dp" android:id="@+id/guideline8"/>
+            android:layout_height="wrap_content" android:id="@+id/guideline8" app:layout_constraintGuide_end="272dp"/>
     <TextView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:textSize="12sp"
-            android:id="@+id/txtSynopsis" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="@+id/guideline8" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:text="@string/txtSynopsis" app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintVertical_bias="0.811"/>
+            android:id="@+id/txtSynopsis"
+            android:layout_marginBottom="32dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:text="@string/txtSynopsis"
+            app:layout_constraintTop_toTopOf="@+id/guideline8"/>
     <TextView
-            android:text="@string/txtSynop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/txtSynop" android:layout_marginBottom="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintHorizontal_bias="0.025"
-            app:layout_constraintVertical_bias="0.332" app:layout_constraintBottom_toBottomOf="parent"/>
+            android:textSize="20sp"
+            android:id="@+id/synopsisTitle" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintVertical_bias="0.916" android:text="@string/txtSynop"/>
 
 
 </android.support.constraint.ConstraintLayout>
