@@ -1,4 +1,4 @@
-package com.example.oscar.kitsu.Views.retrofit
+package com.example.oscar.kitsu.Views.Models
 import com.google.gson.annotations.SerializedName
 
 
